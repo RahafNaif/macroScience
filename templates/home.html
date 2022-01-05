@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    
+{% endblock head %}
+
+{% block content %}
+
+<section class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{{ url_for('static', filename= 'img/coding.svg') }}" style="height:150px;margin-top:50px;" class="card-top-img">
+          <div class="card-body">
+            <h3 class="card-title">كلية الحاسب والمعلومات</h3>
+            <p>تخصصات كلية الحاسب والمعلومات</p>
+            <a href="section/ccis" class="btn btn-outline-danger">المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{{ url_for('static', filename= 'img/science.svg') }}" style="height:150px; margin-top:50px;" class="card-top-img">
+          <div class="card-body">
+            <h3 class="card-title">كلية العلوم</h3>
+            <p>تخصصات كلية العلوم</p>
+            <a href="section/science" class="btn btn-outline-danger">المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{{ url_for('static', filename= 'img/blueprint.svg') }}" style="height:150px;margin-top:50px;"class="card-top-img">
+          <div class="card-body">
+            <h3 class="card-title">كلية العمارة والتخطيط</h3>
+            <p>تخصصات كلية العمارة والتخطيط</p>
+            <a href="section/architecture" class="btn btn-outline-danger">المزيد</a>
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+
+   
+
+{% endblock content %}

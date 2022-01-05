@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Macro Science</title>
+    
+    {% block head %}{% endblock %}
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/layout.css') }}">
+  </head>
+  <body>
+    <header>
+      Macro Science
+    </header>
+    <nav>
+      <a href="{{ url_for('home.homepage') }}">الرئيسية</a>
+      <a href="{{ url_for('home.ccis') }}">كلية الحاسب والمعلومات</a>
+      <a href="{{ url_for('home.sc') }}">كلية العلوم</a>
+      <a href="{{ url_for('home.arc') }}">كلية العمارة والتخطيط</a>
+    </nav><br>
+
+    {% block content %}{% endblock %}<br><br>
+    
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-sec links">
+          <h3>روابط سريعة</h3><br>
+          <ul class="link-style">
+            <a href="{{ url_for('home.homepage') }}"><li>الرئيسية</li></a>
+            <a href="{{ url_for('home.ccis') }}"><li>كلية الحاسب والمعلومات</li></a>
+            <a href="{{ url_for('home.sc') }}"><li>كلية العلوم</li></a>
+            <a href="{{ url_for('home.arc') }}"><li>كلية العمارة والتخطيط</li></a>
+          </ul>
+        </div>
+        <div class="footer-sec about">
+          <h3>Macro Science</h3>
+          <p> مبادرة من مبادارات فريق حباء التطوعي</p>
+          <p>hepa@gmail.com</p>
+          <a href="#"><img src="{{ url_for('static', filename= 'img/twitter.svg') }}" style="height:20px;width: 20px;margin-right: 70px;"></a>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </body>
+</html>

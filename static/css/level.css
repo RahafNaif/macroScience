@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #464BC6;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+   font-size: 20px;
+  }
+  
+  nav {
+    overflow: hidden;
+    background-color: #F2EFFF;
+  }
+  
+  nav a {
+    text-align: right;
+    color: black;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+  }
+  
+  nav a:hover {
+    background-color: #464BC6;
+    color: white;
+    text-decoration: none;
+  }
+
+  .card{
+      padding: 100px;
+      background-color: #F2EFFF;
+      box-shadow: 0 0 0 10px 0;
+      margin: 50px;
+      align-items: right;
+  }
+
+  
+  .link {
+    text-align: right;
+    text-decoration: none;
+   
+  }

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block head %}
+<link rel="stylesheet"  href="{{ url_for('static', filename='css/timeline.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="timeline">
+        <ul>
+            {% for level in levels %}
+            <li>
+                <a href="{{ level.path }}">
+                <div class="timeline-content">
+                    <h1>{{ level.title }}</h1>
+                    <p>{{ level.content }}</p>
+                </div>
+            </a>
+            </li>
+            {% endfor %}
+            
+        </ul>
+    </div>
+</div>
+
+{% endblock content %}
